@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dti-container">
+    <h2>DTI Calculator</h2>
+
+    <input id="income" type="number" placeholder="Monthly Income">
+    <input id="expenses" type="number" placeholder="Monthly Expenses">
+
+    <button onclick="calculateDTI()">Calculate DTI</button>
+
+    <div id="dtiResult"></div>
+</div>
+
+<div class="ltv-container" id="ltvSection" style="display:none;">
+    <h2>LTV Calculator</h2>
+
+    <input id="propertyValue" type="number" placeholder="Property Value">
+    <input id="loanAmount" type="number" placeholder="Loan Amount">
+
+    <button onclick="calculateLTV()">Calculate LTV</button>
+
+    <div id="ltvResult"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

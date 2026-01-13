@@ -1,0 +1,28 @@
+body {
+    background: #f4f6f8;
+    font-family: Arial;
+}
+
+.dti-container, .ltv-container {
+    width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    width: 95%;
+    background: #0057b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
